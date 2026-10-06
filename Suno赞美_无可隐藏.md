@@ -2,7 +2,7 @@
 
 ## Suno — Style of Music
 
-Poetic Mandarin Christian congregational hymn-worship, 6/8, around 66 BPM, with restrained D minor verses and a gentle lift toward F major in the final refrain. Scripture-rooted imagery, compact parallel lines, one central image per stanza, and dignified emotional weight. The lyrics should feel like a hymn and a shared prayer, never like a diary or spoken-word confession. Give the melody real development: low intimate stanzas, a rising memorable refrain, a contrasting bridge with sustained prayerful notes, and simple two-part congregation harmonies at the end. Piano, acoustic guitar, cello, warm bass, soft organ, restrained live drums, and a small choir. Clear Mandarin diction, reverent space, solemn repentance opening into resurrection hope. No generic inspirational phrases, no EDM, no rap, no glossy commercial pop, no vocal runs, no cinematic trailer effects.
+Poetic Mandarin Christian hymn-worship, 6/8, around 66 BPM, with restrained D minor verses and a gentle lift toward F major in the final refrain. Scripture-rooted imagery, compact parallel lines, one central image per stanza, and dignified emotional weight. Keep one intimate lead vocal for most of the song. The stanzas and bridge must have no choir, no echo responses, no call-and-response, and no constant backing vocals. Add only a very quiet single harmony on selected lines of the first refrain; let the congregation and two-part harmony enter fully only in the final refrain. Give the melody real development through dynamics and phrasing, not repeated vocal accents. Piano, acoustic guitar, cello, warm bass, soft organ, and restrained live drums. Clear Mandarin diction, reverent space, solemn repentance opening into resurrection hope. No generic inspirational phrases, no EDM, no rap, no glossy commercial pop, no vocal runs, no cinematic trailer effects.
 
 ## Suno — Lyrics
 
@@ -10,7 +10,7 @@ Poetic Mandarin Christian congregational hymn-worship, 6/8, around 66 BPM, with 
 在羔羊面前
 我无可隐藏
 
-[Stanza 1]
+[Stanza 1 - solo lead, no backing vocals]
 木头横在天地间
 沉默压过喧嚷
 无罪的羔羊
@@ -21,7 +21,7 @@ Poetic Mandarin Christian congregational hymn-worship, 6/8, around 66 BPM, with 
 当血滴落尘土
 谁能说与我无关
 
-[Refrain]
+[Refrain - very light harmony only on the last line]
 在十架下
 我无可隐藏
 我的义如尘土
@@ -32,7 +32,7 @@ Poetic Mandarin Christian congregational hymn-worship, 6/8, around 66 BPM, with 
 不是口中的赞美
 是生命归给你
 
-[Stanza 2]
+[Stanza 2 - solo lead, no backing vocals]
 我把圣洁挂在唇边
 心却恋慕旧王
 我求羔羊的血
@@ -43,7 +43,7 @@ Poetic Mandarin Christian congregational hymn-worship, 6/8, around 66 BPM, with 
 主啊 你的光临到
 我愿被你照亮
 
-[Refrain]
+[Refrain - very light harmony only on the last line]
 在十架下
 我无可隐藏
 我的义如尘土
@@ -54,7 +54,7 @@ Poetic Mandarin Christian congregational hymn-worship, 6/8, around 66 BPM, with 
 不是口中的赞美
 是生命归给你
 
-[Bridge]
+[Bridge - solo lead, no echo, no choir]
 宝血不是装饰
 恩典不是借口
 被你买赎的人
@@ -65,7 +65,7 @@ Poetic Mandarin Christian congregational hymn-worship, 6/8, around 66 BPM, with 
 让我在你脚前
 成为活的祭
 
-[Final Refrain]
+[Final Refrain - congregation and gentle two-part harmony enter here]
 在十架下
 我无可隐藏
 你从死里复活

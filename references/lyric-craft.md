@@ -85,6 +85,17 @@
 4. 以“领唱一次、会众第二次”的方式检查：会众部分应少于或等于领唱的概念密度。
 5. 标记 `lyric_issues`：`too_long`（行过长）、`stress_mismatch`（重音不合）、`breathless`（无换气）、`vague`（过于抽象）、`theology_dense`（概念过密）。未解决的问题进入 `quality.issues`，不要用“感觉顺”代替记录。
 
+## Suno 人声层次控制
+
+提示词中的 `congregational`、`choir`、`call-and-response`、`echo`、`anthemic` 和 `two-part harmony` 容易让生成器从第一句就加入持续和声、重音回声或群唱。若歌曲需要独唱起步，应明确写出：
+
+- `solo lead vocal in the stanzas and bridge`
+- `no constant backing vocals, no echo responses, no call-and-response`
+- `light harmony only on selected refrain lines`
+- `full congregation enters only in the final refrain`
+
+把声部要求同时写在歌词标签中，例如 `[Stanza 1 - solo lead]`、`[Bridge - no choir]`、`[Final Refrain - harmony enters]`。敬拜感可以靠留白、钢琴、和声进入时机和动态推进建立，不需要全曲持续合唱。
+
 ## 创作交付字段
 
 `create` 模式至少记录：`function`、`core_question`、`structure`、`line_char_counts`、`congregational_hook`、`lyric_issues` 和 `originality_note`。若输出数字简谱，歌词与音符必须逐行对齐；若旋律尚未确定，明确标记为歌词草稿，不伪装成已验证谱面。
