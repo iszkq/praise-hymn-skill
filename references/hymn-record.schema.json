@@ -1,0 +1,154 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://codex.local/schemas/praise-hymn/hymn-record-1.2.json",
+  "title": "Praise Hymn Record",
+  "type": "object",
+  "required": ["schema_version", "record_id", "status", "processing", "source", "metadata", "transcription", "sections", "analysis", "quality", "uncertain_items", "rights", "review", "change_log"],
+  "properties": {
+    "schema_version": {"const": "1.2"},
+    "record_id": {"type": "string", "minLength": 1},
+    "status": {"enum": ["draft", "review", "approved", "rejected", "needs-input"]},
+    "processing": {
+      "type": "object",
+      "required": ["skill_version", "mode", "processed_at"],
+      "properties": {
+        "skill_version": {"type": "string", "minLength": 1},
+        "mode": {"enum": ["transcribe", "analyze", "arrange", "create", "curate", "batch"]},
+        "processed_at": {"type": "string", "minLength": 1},
+        "operator": {"type": ["string", "null"]},
+        "model": {"type": ["string", "null"]}
+      },
+      "additionalProperties": true
+    },
+    "source": {
+      "type": "object",
+      "required": ["path", "sha256"],
+      "properties": {
+        "path": {"type": "string", "minLength": 1},
+        "sha256": {"type": "string", "pattern": "^[0-9a-fA-F]{64}$"},
+        "page": {"type": ["integer", "null"], "minimum": 1},
+        "title_as_seen": {"type": ["string", "null"]},
+        "catalog_number": {"type": ["string", "null"]},
+        "region_refs": {"type": "array", "items": {"type": "object"}}
+      },
+      "additionalProperties": true
+    },
+    "metadata": {
+      "type": "object",
+      "required": ["language"],
+      "properties": {
+        "key": {"type": ["string", "null"]},
+        "meter": {"type": ["string", "null"]},
+        "tempo": {"type": ["string", "number", "null"]},
+        "language": {"type": "string", "minLength": 1}
+      },
+      "additionalProperties": true
+    },
+    "transcription": {
+      "type": "object",
+      "required": ["raw", "normalized"],
+      "properties": {
+        "raw": {"type": "string"},
+        "normalized": {"type": "string"},
+        "notation_system": {"type": "string"},
+        "transcriber": {"type": ["string", "null"]}
+      },
+      "additionalProperties": true
+    },
+    "sections": {"type": "array", "items": {"$ref": "#/$defs/section"}},
+    "analysis": {
+      "type": "object",
+      "properties": {
+        "themes": {"type": "array", "items": {"type": "string"}},
+        "worship_use": {"type": "array", "items": {"type": "string"}},
+        "melodic_notes": {"type": "string"},
+        "lyric_craft": {"$ref": "#/$defs/lyricCraft"}
+      },
+      "additionalProperties": true
+    },
+    "quality": {
+      "type": "object",
+      "required": ["confidence", "issues"],
+      "properties": {
+        "confidence": {"enum": ["high", "medium", "low"]},
+        "issues": {"type": "array", "items": {"$ref": "#/$defs/issue"}},
+        "field_confidence": {"type": "object", "additionalProperties": {"enum": ["high", "medium", "low"]}},
+        "image_audit": {"type": ["object", "null"]}
+      },
+      "additionalProperties": true
+    },
+    "uncertain_items": {"type": "array", "items": {"$ref": "#/$defs/uncertain"}},
+    "rights": {
+      "type": "object",
+      "required": ["source_provided_by_user", "reuse_permission", "publication_allowed"],
+      "properties": {
+        "source_provided_by_user": {"type": "boolean"},
+        "reuse_permission": {"enum": ["unknown", "user-provided", "licensed", "public-domain", "restricted"]},
+        "publication_allowed": {"type": "boolean"}
+      },
+      "additionalProperties": true
+    },
+    "review": {
+      "type": "object",
+      "required": ["reviewers", "decision"],
+      "properties": {
+        "reviewers": {"type": "array", "items": {"type": "object"}},
+        "decision": {"enum": ["pending", "approved", "rejected", "needs-input"]},
+        "last_reviewed_at": {"type": ["string", "null"]},
+        "closed_issue_ids": {"type": "array", "items": {"type": "string"}}
+      },
+      "additionalProperties": true
+    },
+    "change_log": {"type": "array", "items": {"type": "object"}}
+  },
+  "$defs": {
+    "section": {
+      "type": "object",
+      "required": ["label", "melody", "lyrics"],
+      "properties": {
+        "label": {"type": "string", "minLength": 1},
+        "melody": {"type": "array", "items": {"type": "string"}},
+        "lyrics": {"type": "array", "items": {"type": "string"}},
+        "source_refs": {"type": "array", "items": {"type": "object"}}
+      },
+      "additionalProperties": true
+    },
+    "issue": {
+      "type": "object",
+      "required": ["id", "severity", "status"],
+      "properties": {
+        "id": {"type": "string", "minLength": 1},
+        "severity": {"enum": ["P0", "P1", "P2", "P3"]},
+        "status": {"enum": ["open", "closed", "deferred"]},
+        "summary": {"type": "string"}
+      },
+      "additionalProperties": true
+    },
+    "uncertain": {
+      "type": "object",
+      "required": ["id", "location", "confidence"],
+      "properties": {
+        "id": {"type": "string", "minLength": 1},
+        "location": {"type": "string", "minLength": 1},
+        "confidence": {"enum": ["high", "medium", "low"]},
+        "candidate_readings": {"type": "array", "items": {"type": "string"}},
+        "resolution": {"type": ["string", "null"]}
+      },
+      "additionalProperties": true
+    },
+    "lyricCraft": {
+      "type": "object",
+      "properties": {
+        "function": {"type": "string", "minLength": 1},
+        "core_question": {"type": ["string", "null"]},
+        "structure": {"type": "array", "items": {"type": "string"}},
+        "line_char_counts": {"type": "array", "items": {"type": "integer", "minimum": 0}},
+        "congregational_hook": {"type": ["string", "null"]},
+        "lyric_issues": {"type": "array", "items": {"type": "string"}},
+        "originality_note": {"type": ["string", "null"]}
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}

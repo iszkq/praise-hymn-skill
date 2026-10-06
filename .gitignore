@@ -1,0 +1,5 @@
+__pycache__/
+*.py[cod]
+.venv/
+*.manifest.json
+*.audit.json

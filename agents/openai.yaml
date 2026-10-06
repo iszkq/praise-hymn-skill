@@ -1,0 +1,4 @@
+interface:
+  display_name: "赞美诗歌与歌谱"
+  short_description: "企业级分析、转写、审阅与创作中文赞美诗歌和数字简谱"
+  default_prompt: "使用 $praise-hymn 分析这份中文赞美诗歌谱，或按歌本风格创作一首可会众传唱的新歌。"
