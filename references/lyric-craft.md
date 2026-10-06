@@ -96,6 +96,8 @@
 
 把声部要求同时写在歌词标签中，例如 `[Stanza 1 - solo lead]`、`[Bridge - no choir]`、`[Final Refrain - harmony enters]`。敬拜感可以靠留白、钢琴、和声进入时机和动态推进建立，不需要全曲持续合唱。
 
+声部需要有进入时机时，按段落写清楚：第一节 `solo lead only`，第一次回应只在末两行 `low unison`，第二次回应只在句尾 `light harmony`，桥段保持领唱，最后回应的后半段才加入 `small congregation and soft choir`。如果负面提示仍然无效，再暂时删除 `congregational`、`choir`、`anthemic`、`call-and-response` 等词，改用明确的分段声部要求。重新生成时开启全新歌曲，不要从旧音频继续延展或复用旧编曲；生成器可能会保留旧的声部习惯。
+
 ## 创作交付字段
 
 `create` 模式至少记录：`function`、`core_question`、`structure`、`line_char_counts`、`congregational_hook`、`lyric_issues` 和 `originality_note`。若输出数字简谱，歌词与音符必须逐行对齐；若旋律尚未确定，明确标记为歌词草稿，不伪装成已验证谱面。

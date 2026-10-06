@@ -2,7 +2,7 @@
 
 ## Suno — Style of Music
 
-Poetic Mandarin Christian hymn-worship, 6/8, around 66 BPM, with restrained D minor verses and a gentle lift toward F major in the final refrain. Scripture-rooted imagery, compact parallel lines, one central image per stanza, and dignified emotional weight. Keep one intimate lead vocal for most of the song. The stanzas and bridge must have no choir, no echo responses, no call-and-response, and no constant backing vocals. Add only a very quiet single harmony on selected lines of the first refrain; let the congregation and two-part harmony enter fully only in the final refrain. Give the melody real development through dynamics and phrasing, not repeated vocal accents. Piano, acoustic guitar, cello, warm bass, soft organ, and restrained live drums. Clear Mandarin diction, reverent space, solemn repentance opening into resurrection hope. No generic inspirational phrases, no EDM, no rap, no glossy commercial pop, no vocal runs, no cinematic trailer effects.
+Poetic Mandarin Christian worship song, 6/8, around 66 BPM, restrained D minor verses with a gentle lift toward F major near the ending. Start with one dry close-mic lead singer, intimate and vulnerable, with piano, fingerpicked acoustic guitar, and very soft cello. Keep the first stanza completely solo with audible breathing and silence. In the first refrain, add only a very low unison response on the final two lines. In the second refrain, add light two-part harmony only at phrase endings. Keep the bridge mostly solo, then let a small congregation and soft choir enter gradually in the second half of the final refrain. The final refrain may open into warm sustained harmony, but never use backing vocals continuously. No constant echo, no repeated last words, no call-and-response on every line, no vocal ad-libs. Scripture-rooted imagery, dignified repentance, and quiet resurrection hope. Clear Mandarin diction, organic room sound, no commercial pop gloss, no EDM, no rap, no vocal runs, no cinematic trailer effects. Generate as a completely new song; do not continue or imitate a previous arrangement.
 
 ## Suno — Lyrics
 
@@ -10,7 +10,7 @@ Poetic Mandarin Christian hymn-worship, 6/8, around 66 BPM, with restrained D mi
 在羔羊面前
 我无可隐藏
 
-[Stanza 1 - solo lead, no backing vocals]
+[Stanza 1 - one dry solo lead, no harmony]
 木头横在天地间
 沉默压过喧嚷
 无罪的羔羊
@@ -21,7 +21,7 @@ Poetic Mandarin Christian hymn-worship, 6/8, around 66 BPM, with restrained D mi
 当血滴落尘土
 谁能说与我无关
 
-[Refrain - very light harmony only on the last line]
+[Refrain 1 - solo lead, low unison only on the final two lines]
 在十架下
 我无可隐藏
 我的义如尘土
@@ -32,7 +32,7 @@ Poetic Mandarin Christian hymn-worship, 6/8, around 66 BPM, with restrained D mi
 不是口中的赞美
 是生命归给你
 
-[Stanza 2 - solo lead, no backing vocals]
+[Stanza 2 - one dry solo lead, no harmony]
 我把圣洁挂在唇边
 心却恋慕旧王
 我求羔羊的血
@@ -43,7 +43,7 @@ Poetic Mandarin Christian hymn-worship, 6/8, around 66 BPM, with restrained D mi
 主啊 你的光临到
 我愿被你照亮
 
-[Refrain - very light harmony only on the last line]
+[Refrain 2 - light two-part harmony only at phrase endings]
 在十架下
 我无可隐藏
 我的义如尘土
@@ -54,7 +54,7 @@ Poetic Mandarin Christian hymn-worship, 6/8, around 66 BPM, with restrained D mi
 不是口中的赞美
 是生命归给你
 
-[Bridge - solo lead, no echo, no choir]
+[Bridge - solo lead, sparse piano, no echo, no choir]
 宝血不是装饰
 恩典不是借口
 被你买赎的人
@@ -65,7 +65,7 @@ Poetic Mandarin Christian hymn-worship, 6/8, around 66 BPM, with restrained D mi
 让我在你脚前
 成为活的祭
 
-[Final Refrain - congregation and gentle two-part harmony enter here]
+[Final Refrain - small congregation and soft choir enter in the second half]
 在十架下
 我无可隐藏
 你从死里复活

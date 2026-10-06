@@ -8,7 +8,7 @@
   "record_id": "praise-hymn-001",
   "status": "review",
   "processing": {
-    "skill_version": "1.4.1",
+    "skill_version": "1.4.2",
     "mode": "transcribe",
     "processed_at": "2026-10-06T00:00:00Z",
     "operator": null,
