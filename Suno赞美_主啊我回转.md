@@ -14,42 +14,42 @@ Mandarin Chinese Christian congregational hymn in a simple strophic form, one re
 
 ## 歌词
 
-### 第一节
+[Stanza 1]
 
 主啊我来到你面前
 不再隐藏我亏欠
 你为我的罪走十架
 我怎能只说感谢
 
-### 第二节
+[Stanza 2]
 
 我曾求你保守我
 却不肯放下自己
 我想得着你的安慰
 却还抓住我的权利
 
-### 回应
+[Refrain]
 
 主啊我回转
 主啊我愿意
 把我今天交给你
 求你改变我
 
-### 第三节
+[Stanza 3]
 
 不是眼泪不是话
 不是聚会里点头
 求你进到我生活
 在每一天作我王
 
-### 第四节
+[Stanza 4]
 
 宝血已经买赎我
 我不再属于自己
 十字架前我回转
 一生跟随你到底
 
-### 回应（重复）
+[Refrain - Repeat]
 
 主啊我回转
 主啊我愿意
