@@ -148,6 +148,9 @@
         "vocal_plan": {"type": "array", "items": {"type": "string"}},
         "vocal_issues": {"type": "array", "items": {"type": "string"}},
         "transition_issues": {"type": "array", "items": {"type": "string"}},
+        "section_pacing": {"type": "array", "items": {"type": "string"}},
+        "hook_status": {"enum": ["clear", "weak", "untested"]},
+        "arc_status": {"enum": ["developing", "flat", "untested"]},
         "originality_note": {"type": ["string", "null"]}
       },
       "additionalProperties": true
