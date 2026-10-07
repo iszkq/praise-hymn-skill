@@ -145,6 +145,9 @@
         "line_char_counts": {"type": "array", "items": {"type": "integer", "minimum": 0}},
         "congregational_hook": {"type": ["string", "null"]},
         "lyric_issues": {"type": "array", "items": {"type": "string"}},
+        "vocal_plan": {"type": "array", "items": {"type": "string"}},
+        "vocal_issues": {"type": "array", "items": {"type": "string"}},
+        "transition_issues": {"type": "array", "items": {"type": "string"}},
         "originality_note": {"type": ["string", "null"]}
       },
       "additionalProperties": true

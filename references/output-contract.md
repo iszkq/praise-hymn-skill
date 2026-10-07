@@ -8,7 +8,7 @@
   "record_id": "praise-hymn-001",
   "status": "review",
   "processing": {
-    "skill_version": "1.4.2",
+    "skill_version": "1.5.0",
     "mode": "transcribe",
     "processed_at": "2026-10-06T00:00:00Z",
     "operator": null,
@@ -45,6 +45,9 @@
       "line_char_counts": [],
       "congregational_hook": null,
       "lyric_issues": [],
+      "vocal_plan": [],
+      "vocal_issues": [],
+      "transition_issues": [],
       "originality_note": null
     }
   },

@@ -96,8 +96,21 @@
 
 把声部要求同时写在歌词标签中，例如 `[Stanza 1 - solo lead]`、`[Bridge - no choir]`、`[Final Refrain - harmony enters]`。敬拜感可以靠留白、钢琴、和声进入时机和动态推进建立，不需要全曲持续合唱。
 
-声部需要有进入时机时，按段落写清楚：第一节 `solo lead only`，第一次回应只在末两行 `low unison`，第二次回应只在句尾 `light harmony`，桥段保持领唱，最后回应的后半段才加入 `small congregation and soft choir`。如果负面提示仍然无效，再暂时删除 `congregational`、`choir`、`anthemic`、`call-and-response` 等词，改用明确的分段声部要求。重新生成时开启全新歌曲，不要从旧音频继续延展或复用旧编曲；生成器可能会保留旧的声部习惯。
+声部需要有进入时机时，按“音乐事件”而不是“每段固定加法”来写：第一节 `solo lead only`；第一次回应可以在一个终止处可选 `low unison`；第二次回应保持大部分独唱，只在一处自然长音解决时加 `light harmony`；桥段保持领唱；最后回应后半段才逐渐加入会众。和声进入必须有理由：长音终止、神学关键词、转段抬升或最后一句共同回应。若只是因为到了副歌、每句句尾或重复第二遍就自动加和声，视为 `forced_harmony` 问题。和声应短、轻、可撤回，不能遮住主旋律或把每行变成回声。
+
+## 句间衔接与旋律连贯
+
+AI 生成常把每行当成独立卡片，造成上一句突然停住、下一句重新起唱、重音跳变或伴奏断层。创作和提示词必须同时检查：
+
+- **语义承接**：相邻两行有因果、转折、递进或同一意象的延续；不要每行突然换一个主题。
+- **呼吸承接**：长句在语义完整处换气，短句之间用半拍或一小节的自然间奏；不要在主语、动词和宾语之间硬切。
+- **旋律承接**：相邻句尾和句首至少共享一种关系——延音、级进、拾音、重复动机或和声连接；避免每行都从同一个强拍最高音重新开始。
+- **伴奏承接**：钢琴、吉他或低音在句尾保留尾音，在下一句用同一和弦色彩或经过音接入；转段前才允许明确停顿。
+- **人声承接**：提示词使用 `legato phrasing`、`natural pickups`、`shared breath`、`short instrumental links`、`no chopped syllables`；不要只写“smooth”而没有具体行为。
+- **审听方法**：单独听每一对相邻句，标记 `abrupt_join`（突兀衔接）、`reset_melody`（旋律重置）、`over_pause`（停顿过长）、`stress_jump`（重音跳变）。任一处成立，都要改词、改标记或重生成，不用整首的氛围掩盖局部问题。
+
+和声与衔接互相影响：不要在每个句尾同时加和声、停顿和重拍，否则容易形成“硬收—硬起”。优先保留主旋律的连线，只在真正的终止或转折处让声部和伴奏一起打开。
 
 ## 创作交付字段
 
-`create` 模式至少记录：`function`、`core_question`、`structure`、`line_char_counts`、`congregational_hook`、`lyric_issues` 和 `originality_note`。若输出数字简谱，歌词与音符必须逐行对齐；若旋律尚未确定，明确标记为歌词草稿，不伪装成已验证谱面。
+`create` 模式至少记录：`function`、`core_question`、`structure`、`line_char_counts`、`congregational_hook`、`lyric_issues`、`vocal_plan`、`vocal_issues`、`transition_issues` 和 `originality_note`。可用问题码包括 `forced_harmony`、`abrupt_join`、`reset_melody`、`over_pause`、`stress_jump`。若输出数字简谱，歌词与音符必须逐行对齐；若旋律尚未确定，明确标记为歌词草稿，不伪装成已验证谱面。

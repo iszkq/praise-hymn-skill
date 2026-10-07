@@ -19,4 +19,4 @@
 python scripts/quick_validate.py .
 ```
 
-技能版本：1.4.2
+技能版本：1.5.0
