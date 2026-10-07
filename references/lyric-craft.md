@@ -87,6 +87,8 @@
 
 ## Suno 人声层次控制
 
+Suno 的 Styles 输入通常有字符上限；交付提示词时先压缩到平台显示的限制以内。优先保留拍号/速度、主唱起步、和声进入条件、句间连贯和关键禁用项，删除重复形容词与编曲细节。截图或界面显示 `1000/1000` 时按 1000 个字符处理，不按单词数处理。
+
 提示词中的 `congregational`、`choir`、`call-and-response`、`echo`、`anthemic` 和 `two-part harmony` 容易让生成器从第一句就加入持续和声、重音回声或群唱。若歌曲需要独唱起步，应明确写出：
 
 - `solo lead vocal in the stanzas and bridge`
